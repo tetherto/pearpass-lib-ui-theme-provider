@@ -5,16 +5,16 @@ describe('Color class', () => {
     const color = new Color('#123456')
     expect(color.mode1).toBe('#123456')
     expect(color.option1).toBe('#123456')
-    expect(color.option2).toBe('#123456')
-    expect(color.option3).toBe('#123456')
+    expect(color.dark).toBe('#123456')
+    expect(color.white).toBe('#123456')
   })
 
   test('should create color with multiple parameters', () => {
     const color = new Color('#123456', '#234567', '#345678', '#456789')
     expect(color.mode1).toBe('#123456')
     expect(color.option1).toBe('#234567')
-    expect(color.option2).toBe('#345678')
-    expect(color.option3).toBe('#456789')
+    expect(color.dark).toBe('#345678')
+    expect(color.white).toBe('#456789')
   })
 })
 
@@ -35,22 +35,22 @@ describe('colors object', () => {
   test('primary400 should have correct color values', () => {
     expect(colors.primary400.mode1).toBe('#BADE5B')
     expect(colors.primary400.option1).toBe('#B0D944')
-    expect(colors.primary400.option2).toBe('#B0D944')
-    expect(colors.primary400.option3).toBe('#B0D944')
+    expect(colors.primary400.dark).toBe('#B0D944')
+    expect(colors.primary400.white).toBe('#B0D944')
   })
 
   test('categoryAll has correct color values', () => {
     expect(colors.categoryAll.mode1).toBe('#779FA1')
     expect(colors.categoryAll.option1).toBe('#2A8962')
-    expect(colors.categoryAll.option2).toBe('#7AAF7B')
-    expect(colors.categoryAll.option3).toBe('#7AAF7B')
+    expect(colors.categoryAll.dark).toBe('#7AAF7B')
+    expect(colors.categoryAll.white).toBe('#7AAF7B')
   })
 
   test('errorGreen should have all properties defaulting to mode1', () => {
     expect(colors.errorGreen.mode1).toBe('#76D944')
     expect(colors.errorGreen.option1).toBe('#76D944')
-    expect(colors.errorGreen.option2).toBe('#76D944')
-    expect(colors.errorGreen.option3).toBe('#76D944')
+    expect(colors.errorGreen.dark).toBe('#76D944')
+    expect(colors.errorGreen.white).toBe('#76D944')
   })
 
   test('should ensure all colors are instances of Color class', () => {
@@ -71,8 +71,8 @@ describe('colors object', () => {
     Object.values(colors).forEach((color) => {
       expect(color.mode1).toMatch(hexRegex)
       expect(color.option1).toMatch(hexRegex)
-      expect(color.option2).toMatch(hexRegex)
-      expect(color.option3).toMatch(hexRegex)
+      expect(color.dark).toMatch(hexRegex)
+      expect(color.white).toMatch(hexRegex)
     })
   })
 })
