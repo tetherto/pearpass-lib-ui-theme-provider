@@ -1,6 +1,6 @@
 {
   "name": "pearpass-lib-ui-theme-provider",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "main": "src/index.js",
   "license": "Apache-2.0",
   "exports": {

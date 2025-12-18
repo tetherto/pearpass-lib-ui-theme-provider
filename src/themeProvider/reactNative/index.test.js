@@ -1,5 +1,13 @@
 import React from 'react'
 
+jest.mock('react-native', () => ({
+  Text: 'Text'
+}))
+
+jest.mock('styled-components/native', () => ({
+  ThemeProvider: jest.fn()
+}))
+
 import { Text } from 'react-native'
 import { ThemeProvider as StyledThemeProvider } from 'styled-components/native'
 
