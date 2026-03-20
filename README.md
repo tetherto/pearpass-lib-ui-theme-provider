@@ -5,6 +5,7 @@ A React theme provider library for Pearpass applications that supplies consisten
 ## Table of Contents
 
 - [Features](#features)
+- [Security Notice](#security-notice)
 - [Installation](#installation)
 - [Usage Examples](#usage-examples)
 - [Dependencies](#dependencies)
@@ -17,10 +18,15 @@ A React theme provider library for Pearpass applications that supplies consisten
 - Color class with multiple variant support
 - Styled-components integration
 
+## Security Notice
+
+1. To ensure the security and integrity of your projects, please note that official PearPass packages are distributed exclusively through our GitHub organization.
+2. Any packages with similar names found on the npm registry or other third-party package managers are not affiliated with PearPass and should be strictly avoided. We recommend installing directly from this repository to ensure you are using the verified, open-source version.
+
 ## Installation
 
 ```bash
-npm install pearpass-lib-ui-theme-provider
+npm install git+https://github.com/tetherto/pearpass-lib-ui-theme-provider.git
 ```
 
 ## Usage Examples
@@ -28,7 +34,7 @@ npm install pearpass-lib-ui-theme-provider
 ### React Web
 ```jsx
 import React from 'react';
-import { ThemeProvider } from 'pearpass-lib-ui-theme-provider';
+import { ThemeProvider } from '@tetherto/pearpass-lib-ui-theme-provider';
 import styled from 'styled-components';
 
 const StyledComponent = styled.div`
@@ -50,7 +56,7 @@ function App() {
 ### React Native
 ```jsx
 import React from 'react';
-import { ThemeProvider } from 'pearpass-lib-ui-theme-provider/native';
+import { ThemeProvider } from '@tetherto/pearpass-lib-ui-theme-provider/native';
 import styled from 'styled-components/native';
 
 const StyledComponent = styled.View`
@@ -75,19 +81,13 @@ function App() {
 ## Dependencies
 - [styled-components](https://www.npmjs.com/package/styled-components) - peer dependency
 
-## Depended Submodules
-
-The following sibling submodules must be present in the workspace (they are not declared as npm dependencies):
-
-- [`tether-dev-docs`](../tether-dev-docs)
-
 ## Related Projects
 
-- [pearpass-app-mobile](https://github.com/tetherto/pearpass-app-mobile) - A mobile app for PearPass, a password manager
-- [pearpass-app-desktop](https://github.com/tetherto/pearpass-app-desktop) - A desktop app for PearPass, a password
-- [pearpass-lib-ui-react-native-components](https://github.com/tetherto/pearpass-lib-ui-react-native-components) - A library of React Native UI components for PearPass
-- [pearpass-lib-ui-react-components](https://github.com/tetherto/pearpass-lib-ui-react-components) - A library of React UI components for PearPass
-- [tether-dev-docs](https://github.com/tetherto/tether-dev-docs) - Documentations and guides for developers
+- [@tetherto/pearpass-app-mobile](https://github.com/tetherto/pearpass-app-mobile) - A mobile app for PearPass, a password manager
+- [@tetherto/pearpass-app-desktop](https://github.com/tetherto/pearpass-app-desktop) - A desktop app for PearPass, a password
+- [@tetherto/pearpass-lib-ui-react-native-components](https://github.com/tetherto/pearpass-lib-ui-react-native-components) - A library of React Native UI components for PearPass
+- [@tetherto/pearpass-lib-ui-react-components](https://github.com/tetherto/pearpass-lib-ui-react-components) - A library of React UI components for PearPass
+- [@tetherto/tether-dev-docs](https://github.com/tetherto/tether-dev-docs) - Documentations and guides for developers
 
 ## License
 
