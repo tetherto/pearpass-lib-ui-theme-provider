@@ -20,6 +20,7 @@ export const colors = {
   secondary300: new Color('#5F8587'),
   secondary400: new Color('#2A3B3C'),
   secondary500: new Color('#202C2D'),
+  textSecondary: new Color('#BDC3AC'),
   cyan100: new Color('#98A7AB'),
   cyan200: new Color('#8FADB4'),
   cyan300: new Color('#85B3BE'),
